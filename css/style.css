@@ -1,4 +1,152 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,700&subset=latin,cyrillic);
 html {
-  color: black; }
+  background-color: #515860;
+  color: #bfbfbf;
+  font-family: 'Open Sans', sans-serif; }
+
+@media only screen and (min-width: 1px) {
+  h1,
+  h2,
+  h3,
+  h4 {
+    color: #ffe124;
+    text-transform: uppercase;
+    font-size: 1rem;
+    line-height: normal;
+    margin: 0; } }
+@media only screen and (min-width: 900px) {
+  .container {
+    width: 920px; } }
+.col {
+  padding: 0 !important; }
+
+main {
+  background-color: #222;
+  box-shadow: 0 0 0.5cm rgba(0, 0, 0, 0.5);
+  margin-top: 50px !important;
+  padding: 33px; }
+
+footer {
+  text-align: center; }
+
+.row {
+  margin: 0 !important; }
+
+.about header {
+  margin-bottom: 33px;
+  text-align: center; }
+  .about header h1 {
+    font-size: 30px;
+    font-weight: bold; }
+  .about header h2 {
+    font-size: 20px; }
+.about p {
+  margin-top: 0; }
+.about p:last-child {
+  margin-bottom: 0; }
+
+.avatar {
+  border-radius: 50%;
+  margin-bottom: 33px;
+  width: 180px; }
+
+.skills h1 {
+  font-size: 20px;
+  line-height: 40px; }
+
+hr {
+  border-bottom-color: rgba(255, 255, 255, 0.1);
+  border-left: none;
+  border-right: none;
+  border-top-color: black;
+  margin: 33px auto;
+  width: 80%; }
+
+.icon {
+  background-color: #ffe124;
+  display: inline-block;
+  float: left;
+  height: 40px;
+  margin-right: 10px;
+  width: 40px; }
+
+.skill-group {
+  margin-top: 33px; }
+  .skill-group h2 {
+    display: block;
+    border-bottom: solid 1px #ffe124;
+    width: 230px;
+    margin-bottom: 10px; }
+  .skill-group ul {
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+    margin: 0;
+    margin-left: -10px;
+    padding: 0; }
+
+.collapsible-header,
+.collapsible-body {
+  background-color: transparent;
+  border: none;
+  margin: 0;
+  padding: 0;
+  width: 250px; }
+
+.collapsible-header {
+  border: solid 1px transparent;
+  font-size: 18px;
+  height: 30px;
+  line-height: 30px;
+  min-height: 1px;
+  padding: 0 10px;
+  transition: border, .2s; }
+
+.collapsible-header:hover {
+  border: solid 1px #525252; }
+
+.point-group {
+  display: inline-block;
+  float: right;
+  height: 30px; }
+  .point-group .skill-point {
+    background-color: gray;
+    box-sizing: border-box;
+    display: inline-block;
+    height: 18px;
+    margin-bottom: 5px;
+    margin-right: 2px;
+    margin-top: 5px;
+    width: 2px; }
+
+.level-10 .skill-point {
+  background-color: #ffe124; }
+
+.level-9 .skill-point:nth-child(-n+9) {
+  background-color: #ffe124; }
+
+.level-8 .skill-point:nth-child(-n+8) {
+  background-color: #ffe124; }
+
+.level-7 .skill-point:nth-child(-n+7) {
+  background-color: #ffe124; }
+
+.level-6 .skill-point:nth-child(-n+6) {
+  background-color: #ffe124; }
+
+.level-5 .skill-point:nth-child(-n+5) {
+  background-color: #ffe124; }
+
+.level-4 .skill-point:nth-child(-n+4) {
+  background-color: #ffe124; }
+
+.level-3 .skill-point:nth-child(-n+3) {
+  background-color: #ffe124; }
+
+.level-2 .skill-point:nth-child(-n+2) {
+  background-color: #ffe124; }
+
+.level-1 .skill-point:first-child {
+  background-color: #ffe124; }
 
 /*# sourceMappingURL=style.css.map */

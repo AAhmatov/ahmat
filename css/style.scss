@@ -1,3 +1,235 @@
-html{
-  color: green;
+$accordeon_border_color: #525252;
+$first_color: #ffe124;
+$second_color: #525252;
+
+
+$basic_margin: 33px;
+$accordeon_items_height: 30px;
+$accordeon_margin: 10px;
+$skillpoint_width: 2px;
+$skillpoint_space: 2px;
+$skillpoint_padding: 5px;
+$accordeon_width: 250px;
+
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,700&subset=latin,cyrillic);
+
+html {
+  background-color: #515860;
+  color: #bfbfbf;
+  font-family: 'Open Sans', sans-serif;
+}
+
+@media only screen and (min-width: 1px) {
+  h1,
+  h2,
+  h3,
+  h4 {
+    color: $first_color;
+    text-transform: uppercase;
+    font-size: 1rem;
+    line-height: normal;
+    margin: 0;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  .container {
+    width: 920px;
+  }
+}
+
+.col {
+  padding: 0 !important;
+}
+
+main {
+  background-color: #222;
+  box-shadow: 0 0 .5cm rgba(0, 0, 0, 0.5);
+  margin-top: 50px !important;
+  padding: $basic_margin;
+}
+
+footer {
+  text-align: center;
+}
+
+.row {
+  margin: 0 !important;
+}
+
+.about {
+  header {
+    margin-bottom: $basic_margin;
+    text-align: center;
+    h1 {
+      font-size: 30px;
+      font-weight: bold;
+    }
+
+    h2 {
+      font-size: 20px;
+    }
+  }
+  p {
+    margin-top: 0;
+  }
+  p:last-child {
+    margin-bottom: 0;
+  }
+
+}
+
+.avatar {
+  border-radius: 50%;
+  margin-bottom: $basic_margin;
+  width: 180px;
+}
+
+.skills {
+  h1 {
+    font-size: 20px;
+    line-height: 40px;
+  }
+}
+
+hr {
+  border-bottom-color: rgba(255, 255, 255, .1);
+  border-left: none;
+  border-right: none;
+  border-top-color: rgba(0, 0, 0, 1);
+  margin: $basic_margin auto;
+  width: 80%;
+
+}
+
+.icon {
+  background-color: $first_color;
+  display: inline-block;
+  float: left;
+  height: 40px;
+  margin-right: 10px;
+  width: 40px;
+}
+
+.skill-group {
+  margin-top: $basic_margin;
+  h2{
+    display: block;
+    border-bottom: solid 1px $first_color;
+    width: $accordeon_width - $accordeon_margin * 2;
+    margin-bottom: 10px;
+  }
+  ul {
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+    margin: 0;
+    margin-left: -$accordeon_margin;
+    padding: 0;
+  }
+}
+
+.collapsible-header,
+.collapsible-body {
+  background-color: transparent;
+  border: none;
+  margin: 0;
+  padding: 0;
+  width: $accordeon_width;
+}
+
+.collapsible-header {
+  border: solid 1px transparent;
+  font-size: $accordeon_items_height * .6;
+  height: $accordeon_items_height;
+  line-height: $accordeon_items_height;
+  min-height: 1px;
+  padding: 0 $accordeon_margin;
+  transition: border, .2s;
+
+}
+
+.collapsible-header:hover {
+  border: solid 1px $accordeon_border_color;
+}
+
+.point-group {
+  display: inline-block;
+  float: right;
+  height: $accordeon_items_height;
+
+  .skill-point {
+    background-color: gray;
+    box-sizing: border-box;
+    display: inline-block;
+    height: $accordeon_items_height - $skillpoint_padding * 2 - 2px;
+    margin-bottom: $skillpoint_padding;
+    margin-right: $skillpoint_space;
+    margin-top: $skillpoint_padding;
+    width: $skillpoint_width;
+  }
+}
+
+.level-10 {
+  .skill-point {
+    background-color: $first_color;
+  }
+}
+
+.level-9 {
+  .skill-point:nth-child(-n+9) {
+    background-color: $first_color;
+  }
+}
+
+.level-8 {
+  .skill-point:nth-child(-n+8) {
+    background-color: $first_color;
+  }
+}
+
+.level-7 {
+  .skill-point:nth-child(-n+7) {
+    background-color: $first_color;
+  }
+}
+
+.level-6 {
+  .skill-point:nth-child(-n+6) {
+    background-color: $first_color;
+  }
+}
+
+.level-5 {
+  .skill-point:nth-child(-n+5) {
+    background-color: $first_color;
+  }
+}
+
+.level-4 {
+  .skill-point:nth-child(-n+4) {
+    background-color: $first_color;
+  }
+}
+
+.level-3 {
+  .skill-point:nth-child(-n+3) {
+    background-color: $first_color;
+  }
+}
+
+.level-2 {
+  .skill-point:nth-child(-n+2) {
+    background-color: $first_color;
+  }
+}
+
+.level-1 {
+  .skill-point:first-child {
+    background-color: $first_color;
+  }
+}
+
+.level-0 {
 }
